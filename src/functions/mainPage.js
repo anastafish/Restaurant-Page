@@ -65,7 +65,7 @@ function loadMain(){
 
 
     maker('p', 'locations', document.querySelector('.third'))
-    document.querySelector('.locations').textContent = "Welcome to our Restaurant"
+    document.querySelector('.locations').textContent = "Thank You for visiting us (:"
 }
 
 function loadFooter(){
