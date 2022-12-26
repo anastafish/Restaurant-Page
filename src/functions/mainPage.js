@@ -13,6 +13,7 @@ maker('h2', 'about',header )
 
 maker('a', 'home-link',document.querySelector('.home'))
 document.querySelector('.home-link').textContent = "Home"
+document.querySelector('.home-link').classList.add('active')
  
 maker('a', 'menu-link',document.querySelector('.menu'))
 document.querySelector('.menu-link').textContent = "Menu"
@@ -31,8 +32,37 @@ function loadMain(){
     maker('p', 'para', document.querySelector('.first'))
     document.querySelector('.para').textContent = "Welcome to Our Restaurant We’re delighted to have you as our customer. We know you won’t be disappointed with your order"
 
-    maker('p', 'hours', document.querySelector('.second'))
-    document.querySelector('.hours').textContent = "Sunday: 1 - 2 Monday: 1 -2 "
+    maker('div', 'hours', document.querySelector('.second'))
+
+    maker('h3', 'title', document.querySelector('.hours'))
+    document.querySelector('.title').textContent = "Hours"
+    
+    maker('p', 'sunday', document.querySelector('.hours'))
+    document.querySelector('.sunday').textContent = "Sunday: 9 - 11"
+
+    maker('p', 'munday', document.querySelector('.hours'))
+    document.querySelector('.munday').textContent = "Munday: 9 - 11"
+
+    maker('p', 'tuesday', document.querySelector('.hours'))
+    document.querySelector('.tuesday').textContent = "Tuesday: 9 - 11"
+
+    maker('p', 'wednesday', document.querySelector('.hours'))
+    document.querySelector('.wednesday').textContent = "Wednesday: 9 - 11"
+
+    maker('p', 'thursday', document.querySelector('.hours'))
+    document.querySelector('.thursday').textContent = "Thursday: 9 - 2"
+
+    maker('p', 'friday', document.querySelector('.hours'))
+    document.querySelector('.friday').textContent = "Friday: 9 - 2"
+
+    maker('p', 'satarday', document.querySelector('.hours'))
+    document.querySelector('.satarday').textContent = "Satarday: 9 - 2"
+
+
+
+
+    const br = document.write("<br/>");
+
 
     maker('p', 'locations', document.querySelector('.third'))
     document.querySelector('.locations').textContent = "Welcome to our Restaurant"
@@ -42,12 +72,7 @@ function loadFooter(){
     const footer = document.querySelector('.footer')
 
     maker('h4', 'footer-first', footer)
-    maker('h4', 'footer-second', footer)
-    maker('h4', 'footer-third', footer)
-
-    document.querySelector('.footer-first').textContent = "first side"
-    document.querySelector('.footer-second').textContent = "second side"
-    document.querySelector('.footer-third').textContent = "third side"
+    document.querySelector('.footer-first').textContent = `Copyright © ${new Date().getFullYear()} AnasTafish`
 
 }
 

@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+h2, h4, p,h3{
+    font-family: 'Prosto One', cursive;
+}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:springgreen;
+    background-color:#D5F5E3;
     padding: 0;
     margin: 0;
 }
@@ -10,7 +16,7 @@ body{
 #content{
     display: grid;
     grid-template-rows: minmax(2fr, 300px) 9fr 1fr;
-    background-color: aqua;
+    background-color:#3D969B;
     height: 100%;
     width: 70%;
 }
@@ -19,7 +25,7 @@ body{
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: brown;
+    background-color: #174D50;
 align-items: center;
 justify-items: center;
 }
@@ -33,10 +39,11 @@ justify-items: center;
     padding: 15px;
     border: 2px solid black ;
     border-radius: 10px;
+    background-color: white;
 }
 
 .home-link:hover,.menu-link:hover, .about-link:hover{
-    background-color: aliceblue;
+    background-color: gray;
     user-select: none;
 }
 
@@ -49,37 +56,79 @@ justify-items: center;
     gap: 40px;
 }
 
-.main-menu{
-    align-items: flex-start;
+.main > div{
+    border: 1px solid black;
+background-color:#7DCEA0;
+border-radius: 10px;
+
 }
 
-.main div p{
+
+.main > div > p{
     text-align: center;
     text-overflow: ellipsis;
-    width: 300px;
+    width: 500px;
     border-radius: 10px;
-    border: 1px solid black;
     padding: 20px;
-    color: red;
+    color:#3C3D30;
     font-size: 30px;
 }
 
 .about-msg{
+    background-color:#7DCEA0;
+    padding: 40px;
     text-align: center;
     text-overflow: ellipsis;
-    width: 700px;
+    width: 85%;
     font-size: 30px;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-items: center; 
-    background-color:coral;
+    background-color:#D7BDE2;
 }
 
 .main img{
-    width: 300px;
-    height: 300px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
 } 
+
+.active{
+    background-color: greenyellow;
+}
+
+.menu-first, .menu-second, .menu-third, .menu-fourth, .menu-fifth{
+    width: 75%;
+    height: fit-content;
+    display: flex;
+}
+
+.first-item{
+    text-align: end;
+}
+
+.hours{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+}
+
+.hours p{
+    border-radius: 10px;
+    padding: 20px;
+    color: #3C3D30;
+    font-size: 30px;
+    height: fit-content;
+}
+
+.title{
+text-align: center;
+font-size: 40px;
+}

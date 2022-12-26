@@ -8,6 +8,9 @@ import './styles.css';
 
 loadPage()
 document.querySelector('.menu').addEventListener('click', () => {
+    document.querySelector('.menu-link').classList.add('active')
+    document.querySelector('.home-link').classList.remove('active')
+    document.querySelector('.about-link').classList.remove('active')
     if (document.querySelector('.menu-first')){
         menuClick()
     }
@@ -17,11 +20,17 @@ document.querySelector('.menu').addEventListener('click', () => {
 })
 
 document.querySelector('.home').addEventListener('click', () => {
+    document.querySelector('.home-link').classList.add('active')
+    document.querySelector('.menu-link').classList.remove('active')
+    document.querySelector('.about-link').classList.remove('active')
     loadHome()
 })
 
 
 document.querySelector('.about').addEventListener('click', () => {
+    document.querySelector('.about-link').classList.add('active')
+    document.querySelector('.home-link').classList.remove('active')
+    document.querySelector('.menu-link').classList.remove('active')
     if(document.querySelector('.about-msg')){
         aboutClick()
     }    
